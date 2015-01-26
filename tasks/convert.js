@@ -79,7 +79,7 @@
               // data = JSON.stringify(row, null, options.indent);
               // grunt.log.write(row[0]['Hindi']);
               for(var i=0; i < row.length; i++) {
-                i18n_obj[row[i]['Android ID']] = row[i][f.lang_string];
+                i18n_obj[row[i]['String Name']] = row[i][f.lang_string];
               }
               // grunt.log.writeln(i18n_obj);
               data = JSON.stringify(i18n_obj, null, options.indent);
