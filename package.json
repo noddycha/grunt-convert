@@ -1,7 +1,7 @@
 {
   "name": "grunt-convert-customize",
   "description": "A fork of 'grunt-convert' with more customizations in configurations",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/noddycha/grunt-convert-customize.git",
   "author": {
     "name": "noddyCha (Nadiger Chaitanya)",
