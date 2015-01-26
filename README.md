@@ -1,4 +1,4 @@
-# grunt-convert [![NPM version](https://badge.fury.io/js/grunt-convert.png)](http://badge.fury.io/js/grunt-convert)   [![Build Status](https://travis-ci.org/assemble/grunt-convert.png)](https://travis-ci.org/assemble/grunt-convert) 
+# grunt-convert-customize
 
 > Convert between XML, JSON and YAML, from one format to another.
 
@@ -8,13 +8,13 @@ _If you haven't used [grunt][] before, be sure to check out the [Getting Started
 From the same directory as your project's [Gruntfile][Getting Started] and [package.json][], install this plugin with the following command:
 
 ```bash
-npm install grunt-convert --save-dev
+npm install grunt-convert-customize --save-dev
 ```
 
 Once that's done, add this line to your project's Gruntfile:
 
 ```js
-grunt.loadNpmTasks('grunt-convert');
+grunt.loadNpmTasks('grunt-convert-customize');
 ```
 
 If the plugin has been installed correctly, running `grunt --help` at the command line should list the newly-installed plugin's task or tasks. In addition, the plugin should be listed in package.json as a `devDependency`, which ensures that it will be installed whenever the `npm install` command is run.
@@ -209,7 +209,7 @@ grunt.initConfig({
 
 ## Contributing
 
-We welcome all kinds of contributions! The most basic way to show your support is to star the project, and if you'd like to get involved please see the [Contributing to grunt-convert](http://assemble.io/contributing/) guide for information on contributing to this project.
+We welcome all kinds of contributions! The most basic way to show your support is to star the project, and if you'd like to get involved please see the [Contributing to grunt-convert-customize](http://assemble.io/contributing/) guide for information on contributing to this project.
 
 ## Changes
 **DATE**       **VERSION**   **CHANGES**                                                               
