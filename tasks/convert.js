@@ -72,10 +72,17 @@
 
         if (destExt === '.json') {
           handled = true;
+          var i18n_obj = {}
           csv()
             .from(srcFiles, options.csv)
             .to.array( function( row ) {
-              data = JSON.stringify(row, null, options.indent);
+              // data = JSON.stringify(row, null, options.indent);
+              // grunt.log.write(row[0]['Hindi']);
+              for(var i=0; i < row.length; i++) {
+                i18n_obj[row[i]['Android ID']] = row[i][f.lang_string];
+              }
+              // grunt.log.writeln(i18n_obj);
+              data = JSON.stringify(i18n_obj, null, options.indent);
               grunt.file.write(f.dest, data);
               finish();
               next();
@@ -101,12 +108,7 @@
 
       } else if (srcExt === '.yml' || srcExt === '.yaml') {
 
-        try {
-          data = JSON.stringify(YAML.load(f.src[0]), null, options.indent);
-        }
-        catch (e) {
-          grunt.fail.warn('File ' + f.dest.cyan + ' parsing error: ' + e.message);
-        }
+        data = JSON.stringify(YAML.load(f.src[0]), null, options.indent);
 
       } else if (srcExt === '.plist') {
 
